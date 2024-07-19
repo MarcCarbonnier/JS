@@ -1,0 +1,25 @@
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+.FlexContainer {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    height: 100px;
+}
+
+.FlexContainer div {
+    width: 320px;
+    height: 400px;
+}
+html{
+    height: 100%;
+    background-image: linear-gradient(rgb(71, 0, 179),rgb(153, 0, 0));
+}
+form{
+    color: white;
+}

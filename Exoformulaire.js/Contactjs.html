@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec JS</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+
+<body>
+    <div id="container">
+        <form id="formulaire" action="destination.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Vos Coordonnées:</legend>
+                <section class='FlexContainer'>
+
+                    <div id="text" class="first">
+                        <label for="Societe">Société :</label><br>
+                        <label for="Contact">Personne à contacter :</label><br>
+                        <br>
+                        <br>
+                        <label for="adresseenreprise">Adresse de l'entreprise :</label><br>
+
+                        <br>
+                        <br>
+                        <label for="code_postal">Code postal :</label><br>
+                        <label for="Ville">Ville :</label><br>
+                        <label for="E-mail">E-mail :</label><br>
+                        <label for="tel">Téléphone :</label><br>
+                        <label for="env">Sélectionnez l'environnement<br>technique du projet</label><br>
+                        <select name="Choisisser" id="choix" form="choix">
+                            <option value="choix">Choisisser</option>
+                            <option value="access">access</option>
+                            <option value="Java">Java</option>
+                            <option value="Delphi">Delphi</option>
+                            <option value="Windev">Windev</option>
+                            <option value="Visual_Basic">Visual Basic</option>
+                            <option value="Power">Power Builder</option>
+                            <option value="Internet">Internet</option>
+                            <option value="Intranet">Intranet</option>
+                            <option value="Windows NT">Windows NT</option>
+                            <option value="Unix">Unix</option>
+                            <option value="SQl">SQl Server</option>
+                            <option value="Oracle">Oracle</option>
+                            <option value="Autres">Autres</option>
+                        </select>
+                    </div>
+                    <div class="first">
+                        <input id="Soc" type="text" name="Societe" required><br>
+                        <input  id="PContact" type="text" name="Contact" required><br>
+                        <textarea name="Adresse" rows="7" cols="35"></textarea><br>
+
+                        <input id="codepostal" type="text" name="Code.postal" required><br>
+                        <input  id="Ville" type="text" name="Ville" required><br>
+                        <input  id="e-mail" type="text" name="E-mail" required><br>
+                        <input type="text" name="telephone"><br>
+                        <select name="envirronement" id="env" form="environnement">
+                            <option value=""> </option>
+                            <option value="Terasse">Terasse</option>
+                            <option value="Jardin">Jardin</option>
+                            <option value="Herbes">Herbes</option>
+                        </select><br>
+                    </div>
+
+
+                </section>
+            </fieldset>
+            <button id="sub" type="submit" name="envoyer">Envoyer</button>
+            <button type="reset" name="effacer">Effacer</button>
+
+        </form>
+        </section>
+    </div>
+    <script src="Contact.js"></script>
+</body>
+
+</html>
