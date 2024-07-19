@@ -47,14 +47,9 @@ let del = tab.splice(0 , (nom));
 
 console.log(tab);
 console.log(found);
-if (found == true){
-    del
-}
-else{
-    nom
-}
-console.log(tab);
-
+let find = tab.indexOf(nom)
+console.log(tab.splice(nom , 1))
+console.log(tab)
 
 
 /*

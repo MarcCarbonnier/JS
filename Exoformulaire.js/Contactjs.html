@@ -16,20 +16,20 @@
                 <section class='FlexContainer'>
 
                     <div id="text" class="first">
-                        <label for="Societe">Société :</label><br>
-                        <label for="Contact">Personne à contacter :</label><br>
+                        <label for="Soc">Société :</label><br>
+                        <label for="PContact">Personne à contacter :</label><br>
                         <br>
                         <br>
-                        <label for="adresseenreprise">Adresse de l'entreprise :</label><br>
+                        <label for="adresse_ent">Adresse de l'entreprise :</label><br>
 
                         <br>
                         <br>
-                        <label for="code_postal">Code postal :</label><br>
+                        <label for="codepostal">Code postal :</label><br>
                         <label for="Ville">Ville :</label><br>
-                        <label for="E-mail">E-mail :</label><br>
+                        <label for="e-mail">E-mail :</label><br>
                         <label for="tel">Téléphone :</label><br>
-                        <label for="env">Sélectionnez l'environnement<br>technique du projet</label><br>
-                        <select name="Choisisser" id="choix" form="choix">
+                        <label for="env">Sélectionnez l'environnement technique du projet</label><br>
+                        <select name="Choisisser" id="choix">
                             <option value="choix">Choisisser</option>
                             <option value="access">access</option>
                             <option value="Java">Java</option>
@@ -48,15 +48,15 @@
                     </div>
                     <div class="first">
                         <input id="Soc" type="text" name="Societe" required><br>
-                        <input  id="PContact" type="text" name="Contact" required><br>
-                        <textarea name="Adresse" rows="7" cols="35"></textarea><br>
+                        <input id="PContact" type="text" name="Contact" required><br>
+                        <textarea id="adresse_ent" name="Adresse" rows="7" cols="35"></textarea><br>
 
                         <input id="codepostal" type="text" name="Code.postal" required><br>
-                        <input  id="Ville" type="text" name="Ville" required><br>
-                        <input  id="e-mail" type="text" name="E-mail" required><br>
-                        <input type="text" name="telephone"><br>
-                        <select name="envirronement" id="env" form="environnement">
-                            <option value=""> </option>
+                        <input id="Ville" type="text" name="Ville" required><br>
+                        <input id="e-mail" type="text" name="E-mail" required><br>
+                        <input id="tel" type="text" name="telephone"><br>
+                        <select name="envirronement" id="env">
+                            <option value=""></option>
                             <option value="Terasse">Terasse</option>
                             <option value="Jardin">Jardin</option>
                             <option value="Herbes">Herbes</option>
@@ -70,7 +70,6 @@
             <button type="reset" name="effacer">Effacer</button>
 
         </form>
-        </section>
     </div>
     <script src="Contact.js"></script>
 </body>
